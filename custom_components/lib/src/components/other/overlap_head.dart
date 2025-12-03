@@ -3,7 +3,7 @@
  * email: 1486129104@qq.com
  */
 
-import 'package:custom_components/src/config_export.dart';
+import 'package:beichuan_ui_components/src/config_export.dart';
 
 /// 重叠头像组件 - 显示多个头像重叠排列
 /// [avatarList]     - 头像URL列表

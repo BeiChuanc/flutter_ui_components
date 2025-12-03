@@ -3,7 +3,7 @@
  * email: 1486129104@qq.com
  */
 
-import 'package:custom_components/src/config_export.dart';
+import 'package:beichuan_ui_components/src/config_export.dart';
 
 /// 自定义滚动组件 背景图跟随滚动
 /// * [image]           - 背景图片路径

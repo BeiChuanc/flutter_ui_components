@@ -12,7 +12,7 @@ export 'dialog_example.dart';
 export 'media_example.dart';
 export 'other_example.dart';
 
-import 'package:custom_components/src/config_export.dart';
+import 'package:beichuan_ui_components/src/config_export.dart';
 import 'button_example.dart';
 import 'dialog_example.dart';
 import 'media_example.dart';

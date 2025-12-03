@@ -7,7 +7,7 @@
  * OverlapAvatar、ProtocolText、RotationButton、SlideBottom、TackScroll、HexColor 的使用方法
  */
 
-import 'package:custom_components/src/config_export.dart';
+import 'package:beichuan_ui_components/src/config_export.dart';
 
 /// 其他组件示例页面
 /// Other Components Example Page

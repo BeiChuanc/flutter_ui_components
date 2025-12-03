@@ -6,7 +6,7 @@
  * 展示 MediaPlayer、MediaShowCase、Carousel、WebViewComponent 的使用方法
  */
 
-import 'package:custom_components/src/config_export.dart';
+import 'package:beichuan_ui_components/src/config_export.dart';
 
 /// 媒体组件示例页面
 /// Media Components Example Page

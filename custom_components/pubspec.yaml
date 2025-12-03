@@ -1,6 +1,6 @@
-name: custom_components
-description: "A new Flutter package project."
-version: 0.0.4
+name: beichuan_ui_components
+description: "A collection of beautiful and reusable Flutter UI components including buttons, dialogs, media players, carousels, danmaku pool, gaussian blur effects, and more."
+version: 1.0.0
 homepage: https://github.com/BeiChuanc/flutter_ui_components.git
 
 environment:

@@ -3,7 +3,7 @@
  * email: 1486129104@qq.com
  */
 
-import 'package:custom_components/src/config_export.dart';
+import 'package:beichuan_ui_components/src/config_export.dart';
 
 /// 无数据占位组件
 /// * [width]  - 图片宽度
