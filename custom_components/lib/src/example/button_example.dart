@@ -6,7 +6,7 @@
  * 展示 AppleLogin、GlobalBackButton、ReportButton 的使用方法
  */
 
-import 'package:beichuan_ui_components/src/config_export.dart';
+import 'package:custom_ui_components/src/config_export.dart';
 
 /// 按钮组件示例页面
 /// Button Components Example Page

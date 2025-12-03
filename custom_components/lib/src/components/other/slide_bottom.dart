@@ -3,7 +3,7 @@
  * email: 1486129104@qq.com
  */
 
-import 'package:beichuan_ui_components/src/config_export.dart';
+import 'package:custom_ui_components/src/config_export.dart';
 
 /// 底部滑动导航组件 - 提供带动画的底部导航栏
 /// [selectedIndex]  - 当前选中的索引

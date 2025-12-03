@@ -3,7 +3,7 @@
  * email: 1486129104@qq.com
  */
 
-import 'package:beichuan_ui_components/src/config_export.dart';
+import 'package:custom_ui_components/src/config_export.dart';
 
 /// 指示器效果类型枚举 - 5种效果
 enum IndicatorEffectType { expanding, sliding, jumping, scale, worm }

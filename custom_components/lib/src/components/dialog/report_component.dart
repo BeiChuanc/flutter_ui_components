@@ -3,7 +3,7 @@
  * email: 1486129104@qq.com
  */
 
-import 'package:beichuan_ui_components/src/config_export.dart';
+import 'package:custom_ui_components/src/config_export.dart';
 
 /// 举报类型枚举
 enum ReportType { post, user }

@@ -3,7 +3,7 @@
  * email: 1486129104@qq.com
  */
 
-import 'package:beichuan_ui_components/src/config_export.dart';
+import 'package:custom_ui_components/src/config_export.dart';
 
 /// 高斯模糊背景组件 - 提供毛玻璃效果
 /// [child]          - 子组件

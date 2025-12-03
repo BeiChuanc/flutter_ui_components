@@ -1,4 +1,4 @@
-# Beichuan UI Components
+# Custom UI Components
 
 A collection of beautiful and reusable Flutter UI components for building modern mobile applications.
 
@@ -20,7 +20,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  beichuan_ui_components: ^1.0.0
+  custom_ui_components: ^1.0.1
 ```
 
 Then run:
@@ -59,7 +59,7 @@ class MyApp extends StatelessWidget {
 ### Import
 
 ```dart
-import 'package:beichuan_ui_components/beichuan_ui_components.dart';
+import 'package:custom_ui_components/custom_ui_components.dart';
 ```
 
 ### Button Components

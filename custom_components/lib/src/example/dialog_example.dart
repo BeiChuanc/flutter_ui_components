@@ -6,7 +6,7 @@
  * 展示 BehaviorDialogBox、GlobalTooltip、ReportDialog、UpdateUserDialog 的使用方法
  */
 
-import 'package:beichuan_ui_components/src/config_export.dart';
+import 'package:custom_ui_components/src/config_export.dart';
 
 /// 对话框组件示例页面
 /// Dialog Components Example Page
