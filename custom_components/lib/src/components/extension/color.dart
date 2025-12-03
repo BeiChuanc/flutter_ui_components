@@ -3,7 +3,7 @@
  * email: 1486129104@qq.com
  */
 
-import 'package:custom_components/src/custom_components.dart';
+import 'package:custom_components/src/config_export.dart';
 
 /// Hexadecimal Color Conversion Utility
 /// Supported Formats:
