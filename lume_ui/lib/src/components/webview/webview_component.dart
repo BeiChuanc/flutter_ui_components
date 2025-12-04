@@ -3,6 +3,7 @@
  * email: 1486129104@qq.com
 */
 
+import 'package:flutter/material.dart';
 import 'package:lume_ui/src/config_export.dart';
 
 /// 协议网页视图组件 - 显示服务条款、隐私政策、EULA

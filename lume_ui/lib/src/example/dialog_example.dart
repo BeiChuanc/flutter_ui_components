@@ -6,6 +6,7 @@
  * 展示 BehaviorDialogBox、GlobalTooltip、ReportDialog、UpdateUserDialog 的使用方法
  */
 
+import 'package:flutter/material.dart';
 import 'package:lume_ui/src/config_export.dart';
 
 /// 对话框组件示例页面

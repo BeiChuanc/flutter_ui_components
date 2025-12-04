@@ -3,7 +3,7 @@
  * email: 1486129104@qq.com
  */
 
-import 'package:lume_ui/src/config_export.dart';
+import 'package:flutter/material.dart';
 
 /// 自定义滚动组件 背景图跟随滚动
 /// * [image]           - 背景图片路径

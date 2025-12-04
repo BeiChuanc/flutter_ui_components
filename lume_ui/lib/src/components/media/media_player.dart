@@ -3,6 +3,8 @@
  * email: 1486129104@qq.com
  */
 
+import 'dart:io';
+import 'package:flutter/material.dart';
 import 'package:lume_ui/src/config_export.dart';
 
 /// 全屏媒体播放器

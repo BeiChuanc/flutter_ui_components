@@ -3,7 +3,7 @@
  * email: 1486129104@qq.com
  */
 
-import 'package:lume_ui/src/config_export.dart';
+import 'package:flutter/material.dart';
 
 /// 全局背景配置类
 class GlobalScreenConfig {

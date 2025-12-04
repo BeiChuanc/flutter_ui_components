@@ -12,6 +12,7 @@ export 'dialog_example.dart';
 export 'media_example.dart';
 export 'other_example.dart';
 
+import 'package:flutter/material.dart';
 import 'package:lume_ui/src/config_export.dart';
 import 'button_example.dart';
 import 'dialog_example.dart';

@@ -3,7 +3,7 @@
  * email: 1486129104@qq.com
  */
 
-import 'package:lume_ui/src/config_export.dart';
+import 'package:flutter/material.dart';
 
 /// 无数据占位组件
 /// * [width]  - 图片宽度

@@ -6,6 +6,7 @@
  * 展示 AppleLogin、GlobalBackButton、ReportButton 的使用方法
  */
 
+import 'package:flutter/material.dart';
 import 'package:lume_ui/src/config_export.dart';
 
 /// 按钮组件示例页面

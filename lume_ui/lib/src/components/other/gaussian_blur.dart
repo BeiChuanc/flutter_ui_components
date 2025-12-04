@@ -3,6 +3,8 @@
  * email: 1486129104@qq.com
  */
 
+import 'dart:ui';
+import 'package:flutter/material.dart';
 import 'package:lume_ui/src/config_export.dart';
 
 /// 高斯模糊背景组件 - 提供毛玻璃效果

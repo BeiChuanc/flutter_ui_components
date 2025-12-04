@@ -6,28 +6,6 @@
 // ignore: unnecessary_library_name
 library lume_ui;
 
-/* 核心库 */
-export 'dart:ui'
-    show
-        ImageFilter,
-        BlendMode,
-        Offset,
-        Rect,
-        Color,
-        Paint,
-        Canvas,
-        Size,
-        TextDirection,
-        FontWeight,
-        Locale;
-export 'dart:io';
-export 'dart:math';
-export 'dart:async';
-export 'dart:convert';
-export 'package:flutter/material.dart';
-export 'package:flutter/services.dart';
-export 'package:flutter/gestures.dart';
-
 /* 三方库 */
 export 'package:flutter_screenutil/flutter_screenutil.dart';
 export 'package:bot_toast/bot_toast.dart';

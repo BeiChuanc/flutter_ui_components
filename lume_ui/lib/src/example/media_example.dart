@@ -6,6 +6,7 @@
  * 展示 MediaPlayer、MediaShowCase、Carousel、WebViewComponent 的使用方法
  */
 
+import 'package:flutter/material.dart';
 import 'package:lume_ui/src/config_export.dart';
 
 /// 媒体组件示例页面
@@ -198,7 +199,7 @@ class MediaExample extends StatelessWidget {
             dotSize: 8.0,
             dotSpacing: 4.0,
             activeColor: HexColor.fromHex('#BDFF00'),
-            inactiveColor: Colors.black.withOpacity(0.3),
+            inactiveColor: HexColor.fromHex('#000000', opacity: 0.3),
             onTap: (index) {
               GlobalTooltip.show('Tapped image at index: $index');
             },

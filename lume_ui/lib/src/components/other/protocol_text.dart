@@ -3,6 +3,8 @@
  * email: 1486129104@qq.com
  */
 
+import 'package:flutter/gestures.dart';
+import 'package:flutter/material.dart';
 import 'package:lume_ui/src/config_export.dart';
 
 /// 协议类型枚举

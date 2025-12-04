@@ -3,6 +3,7 @@
  * email: 1486129104@qq.com
  */
 
+import 'package:flutter/material.dart';
 import 'package:lume_ui/src/config_export.dart';
 
 /// 底部滑动导航组件 - 提供带动画的底部导航栏

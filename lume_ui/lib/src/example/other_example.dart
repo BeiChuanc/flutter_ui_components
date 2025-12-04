@@ -7,6 +7,7 @@
  * OverlapAvatar、ProtocolText、RotationButton、SlideBottom、TackScroll、HexColor 的使用方法
  */
 
+import 'package:flutter/material.dart';
 import 'package:lume_ui/src/config_export.dart';
 
 /// 其他组件示例页面
@@ -310,7 +311,7 @@ class _OtherExampleState extends State<OtherExample> {
               return Container(
                 padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 4.h),
                 decoration: BoxDecoration(
-                  color: item.textColor.withOpacity(0.2),
+                  color: item.textColor,
                   borderRadius: BorderRadius.circular(12.r),
                 ),
                 child: Text(
@@ -838,7 +839,7 @@ class _TackScrollDemo extends StatelessWidget {
                 margin: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
                 padding: EdgeInsets.all(16.w),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.1),
+                  color: HexColor.fromHex('#FFFFFF', opacity: 0.1),
                   borderRadius: BorderRadius.circular(12.r),
                 ),
                 child: Text(
@@ -909,7 +910,7 @@ class _GlobalScreenDemo extends StatelessWidget {
       ],
       bottomChild: Container(
         height: 60.h,
-        color: Colors.black.withOpacity(0.8),
+        color: HexColor.fromHex('#000000', opacity: 0.8),
         child: Center(
           child: Text(
             'Bottom Widget',
