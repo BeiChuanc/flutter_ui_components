@@ -1,6 +1,6 @@
 name: lume_ui
 description: "A collection of beautiful and reusable Flutter UI components including buttons, dialogs, media players, carousels, danmaku pool, gaussian blur effects, and more."
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/BeiChuanc/flutter_ui_components.git
 
 environment:

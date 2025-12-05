@@ -12,7 +12,12 @@ class BackButtonConfig {
   final double size;
   final bool hasBlur;
   final String image;
-  const BackButtonConfig({this.size = 25.0, this.hasBlur = true, this.backIcon = true, this.image = ""});
+  const BackButtonConfig({
+    this.size = 25.0,
+    this.hasBlur = true,
+    this.backIcon = true,
+    this.image = "",
+  });
 
   /// 无模糊效果的配置
   factory BackButtonConfig.noBlur({double size = 25.0}) {
@@ -64,6 +69,14 @@ class GlobalBackButton extends StatelessWidget {
 
   /// 构建图标
   Widget imgIcon(double size) {
+    /// 如果图片为空，则显示默认图标
+    if (config.image.isEmpty) {
+      return Icon(
+        Icons.arrow_back,
+        size: size,
+        color: HexColor.fromHex("#FFFFFF"),
+      );
+    }
     return Image.asset(
       config.image,
       width: size,
