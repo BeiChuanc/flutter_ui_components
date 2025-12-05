@@ -20,7 +20,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  lume_ui: ^1.0.3
+  lume_ui: ^1.0.4
 ```
 
 Then run:

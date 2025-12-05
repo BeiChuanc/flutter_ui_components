@@ -12,16 +12,49 @@ class BackButtonConfig {
   final bool hasBlur;
   final String image;
   final Color color;
+  final List<Color>? gradientColors;
   const BackButtonConfig({
     this.size = 25.0,
     this.hasBlur = true,
     this.image = "",
     this.color = Colors.white,
+    this.gradientColors,
   });
 
   /// 无模糊效果的配置
-  factory BackButtonConfig.noBlur({double size = 25.0}) {
-    return BackButtonConfig(size: size, hasBlur: false, color: Colors.white);
+  factory BackButtonConfig.noBlur({
+    double size = 25.0,
+    Color color = Colors.white,
+  }) {
+    return BackButtonConfig(size: size, hasBlur: false, color: color);
+  }
+
+  /// 带模糊效果的配置
+  factory BackButtonConfig.withBlur({
+    double size = 25.0,
+    List<Color>? gradientColors,
+    Color color = Colors.white,
+  }) {
+    return BackButtonConfig(
+      size: size,
+      hasBlur: true,
+      gradientColors: gradientColors,
+      color: color,
+    );
+  }
+
+  /// 带图片的配置
+  factory BackButtonConfig.withImage({
+    double size = 25.0,
+    Color color = Colors.white,
+    required String image,
+  }) {
+    return BackButtonConfig(
+      size: size,
+      hasBlur: false,
+      color: color,
+      image: image,
+    );
   }
 }
 
@@ -52,10 +85,12 @@ class GlobalBackButton extends StatelessWidget {
       radius: 12,
       paddingH: 8,
       paddingV: 8,
-      gradientColors: [
-        HexColor.fromHex("#FFFFFF"),
-        HexColor.fromHex("#FFFFFF", opacity: 0.15),
-      ],
+      gradientColors:
+          config.gradientColors ??
+          [
+            HexColor.fromHex("#FFFFFF"),
+            HexColor.fromHex("#FFFFFF", opacity: 0.15),
+          ],
       child: imgIcon(20.w),
     );
   }

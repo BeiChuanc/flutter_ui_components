@@ -58,7 +58,7 @@ class ButtonExample extends StatelessWidget {
 
   /// Apple 登录按钮示例
   /// Apple Login Button Example
-  /// 
+  ///
   /// 使用方法:
   /// ```dart
   /// AppleLogin(
@@ -90,27 +90,37 @@ class ButtonExample extends StatelessWidget {
 
   /// 返回按钮示例
   /// Back Button Example
-  /// 
+  ///
   /// 使用方法:
   /// ```dart
   /// // 基础用法 - 默认配置（带模糊效果）
   /// GlobalBackButton()
-  /// 
-  /// // 自定义配置
+  ///
+  /// // 带模糊效果的配置
   /// GlobalBackButton(
-  ///   config: BackButtonConfig(
-  ///     size: 30.0,
-  ///     hasBlur: true,
-  ///     image: 'assets/icons/back.png',
+  ///   config: BackButtonConfig.withBlur(
+  ///     size: 25.0,
+  ///     gradientColors: [Colors.white, Colors.white.withOpacity(0.15)],
   ///     color: Colors.white,
   ///   ),
   ///   onTap: () => Navigator.pop(context),
   /// )
-  /// 
+  ///
   /// // 无模糊效果的配置
   /// GlobalBackButton(
-  ///   config: BackButtonConfig.noBlur(size: 25.0),
-  ///   color: Colors.white,
+  ///   config: BackButtonConfig.noBlur(
+  ///     size: 25.0,
+  ///     color: Colors.white,
+  ///   ),
+  /// )
+  ///
+  /// // 带图片的配置
+  /// GlobalBackButton(
+  ///   config: BackButtonConfig.withImage(
+  ///     size: 25.0,
+  ///     image: 'assets/icons/back.png',
+  ///     color: Colors.white,
+  ///   ),
   /// )
   /// ```
   Widget _buildBackButtonExample(BuildContext context) {
@@ -118,7 +128,7 @@ class ButtonExample extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Back button with optional blur effect.',
+          'Back button with optional blur effect and custom image.',
           style: TextStyle(fontSize: 14.sp, color: Colors.grey),
         ),
         SizedBox(height: 12.h),
@@ -135,14 +145,16 @@ class ButtonExample extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              // 示例1：带模糊效果的返回按钮
+              // 示例1：带模糊效果的返回按钮（使用 withBlur 工厂构造）
               Column(
                 children: [
                   GlobalBackButton(
-                    config: BackButtonConfig(
+                    config: BackButtonConfig.withBlur(
                       size: 25.0,
-                      hasBlur: true,
-                      image: 'assets/icons/back.png', // 替换为你的返回图标路径
+                      gradientColors: [
+                        Colors.white,
+                        Colors.white.withOpacity(0.15),
+                      ],
                       color: Colors.white,
                     ),
                     onTap: () {
@@ -156,11 +168,14 @@ class ButtonExample extends StatelessWidget {
                   ),
                 ],
               ),
-              // 示例2：无模糊效果的返回按钮
+              // 示例2：无模糊效果的返回按钮（使用 noBlur 工厂构造）
               Column(
                 children: [
                   GlobalBackButton(
-                    config: BackButtonConfig.noBlur(size: 25.0),
+                    config: BackButtonConfig.noBlur(
+                      size: 25.0,
+                      color: Colors.white,
+                    ),
                     onTap: () {
                       GlobalTooltip.show('Back without blur');
                     },
@@ -168,6 +183,26 @@ class ButtonExample extends StatelessWidget {
                   SizedBox(height: 8.h),
                   Text(
                     'No Blur',
+                    style: TextStyle(color: Colors.white, fontSize: 12.sp),
+                  ),
+                ],
+              ),
+              // 示例3：带图片的返回按钮（使用 withImage 工厂构造）
+              Column(
+                children: [
+                  GlobalBackButton(
+                    config: BackButtonConfig.withImage(
+                      size: 25.0,
+                      image: 'assets/icons/back.png', // 替换为你的返回图标路径
+                      color: Colors.white,
+                    ),
+                    onTap: () {
+                      GlobalTooltip.show('Back with image');
+                    },
+                  ),
+                  SizedBox(height: 8.h),
+                  Text(
+                    'With Image',
                     style: TextStyle(color: Colors.white, fontSize: 12.sp),
                   ),
                 ],
@@ -181,7 +216,7 @@ class ButtonExample extends StatelessWidget {
 
   /// 举报按钮示例
   /// Report Button Example
-  /// 
+  ///
   /// 使用方法:
   /// ```dart
   /// // 基础用法
@@ -192,7 +227,7 @@ class ButtonExample extends StatelessWidget {
   ///     // 处理举报逻辑
   ///   },
   /// )
-  /// 
+  ///
   /// // 带模糊效果
   /// ReportButton(
   ///   size: 24,
@@ -202,7 +237,7 @@ class ButtonExample extends StatelessWidget {
   ///     // 处理举报逻辑
   ///   },
   /// )
-  /// 
+  ///
   /// // 自定义颜色
   /// ReportButton(
   ///   size: 24,
@@ -295,4 +330,3 @@ class ButtonExample extends StatelessWidget {
     );
   }
 }
-
