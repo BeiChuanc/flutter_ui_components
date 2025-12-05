@@ -101,8 +101,8 @@ class ButtonExample extends StatelessWidget {
   ///   config: BackButtonConfig(
   ///     size: 30.0,
   ///     hasBlur: true,
-  ///     backIcon: true,
   ///     image: 'assets/icons/back.png',
+  ///     color: Colors.white,
   ///   ),
   ///   onTap: () => Navigator.pop(context),
   /// )
@@ -110,6 +110,7 @@ class ButtonExample extends StatelessWidget {
   /// // 无模糊效果的配置
   /// GlobalBackButton(
   ///   config: BackButtonConfig.noBlur(size: 25.0),
+  ///   color: Colors.white,
   /// )
   /// ```
   Widget _buildBackButtonExample(BuildContext context) {
@@ -142,6 +143,7 @@ class ButtonExample extends StatelessWidget {
                       size: 25.0,
                       hasBlur: true,
                       image: 'assets/icons/back.png', // 替换为你的返回图标路径
+                      color: Colors.white,
                     ),
                     onTap: () {
                       GlobalTooltip.show('Back with blur');

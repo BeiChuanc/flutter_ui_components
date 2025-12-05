@@ -150,7 +150,7 @@ class _MediaPlayerState extends State<MediaPlayer> {
       top: MediaQuery.of(context).padding.top + 10.h,
       left: 16.w,
       child: GlobalBackButton(
-        config: BackButtonConfig(backIcon: false),
+        config: BackButtonConfig(hasBlur: false, color: Colors.white),
       ),
     );
   }

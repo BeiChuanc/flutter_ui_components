@@ -117,7 +117,9 @@ class _WebViewComponentState extends State<WebViewComponent> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          GlobalBackButton(config: BackButtonConfig(backIcon: false)),
+          GlobalBackButton(
+            config: BackButtonConfig(hasBlur: false, color: Colors.black),
+          ),
           Expanded(
             child: Text(
               widget.type.title,

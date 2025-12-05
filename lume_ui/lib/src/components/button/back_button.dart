@@ -8,20 +8,20 @@ import 'package:lume_ui/src/config_export.dart';
 
 /// 返回按钮配置类
 class BackButtonConfig {
-  final bool backIcon;
   final double size;
   final bool hasBlur;
   final String image;
+  final Color color;
   const BackButtonConfig({
     this.size = 25.0,
     this.hasBlur = true,
-    this.backIcon = true,
     this.image = "",
+    this.color = Colors.white,
   });
 
   /// 无模糊效果的配置
   factory BackButtonConfig.noBlur({double size = 25.0}) {
-    return BackButtonConfig(size: size, hasBlur: false);
+    return BackButtonConfig(size: size, hasBlur: false, color: Colors.white);
   }
 }
 
@@ -42,9 +42,7 @@ class GlobalBackButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap ?? () => Navigator.pop(context),
-      child: config.backIcon
-          ? (config.hasBlur ? _withBlur() : _withoutBlur())
-          : imgIcon(config.size.w),
+      child: config.hasBlur ? _withBlur() : _withoutBlur(),
     );
   }
 
@@ -71,11 +69,7 @@ class GlobalBackButton extends StatelessWidget {
   Widget imgIcon(double size) {
     /// 如果图片为空，则显示默认图标
     if (config.image.isEmpty) {
-      return Icon(
-        Icons.arrow_back,
-        size: size,
-        color: HexColor.fromHex("#FFFFFF"),
-      );
+      return Icon(Icons.arrow_back, size: size, color: config.color);
     }
     return Image.asset(
       config.image,
